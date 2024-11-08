@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="_SiteMaster.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %></title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/site.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="/">DesignASlime2024</a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="~/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="~/Pages/Slime_Kits.aspx">Slime Kits</a></li>
+                        <li class="nav-item"><a class="nav-link" href="~/Pages/Supplies.aspx">Supplies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="~/Pages/Slime.aspx">Slime</a></li>
+                        <li class="nav-item"><a class="nav-link" href="~/Pages/Sales.aspx">Sales</a></li>
+                        <li class="nav-item"><a class="nav-link" href="~/Pages/Kits.aspx">Kits</a></li>
+                        <li class="nav-item"><a class="nav-link" href="~/Pages/Products.aspx">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="~/Pages/Contact_Us.aspx">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="~/Pages/About.aspx">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="content">
+            <asp:ContentPlaceHolder id="MainContent" runat="server" />
+        </div>
+
+        <footer class="bg-light text-center py-3">
+            <p>&copy; 2024 DesignASlime. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
