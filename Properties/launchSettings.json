@@ -1,0 +1,20 @@
+{
+  "profiles": {
+    "IIS Express": {
+      "environmentVariables": [],
+      "applicationUrl": "http://localhost:8080", // The port you want to use
+      "iisSettings": {
+        "windowsAuthentication": false,
+        "anonymousAuthentication": true,
+        "iisExpress": {
+          "applicationUrl": "http://localhost:8080", // The port for IIS Express
+          "sslPort": 44301
+        }
+      }
+    },
+    "DesignASlime2024": {
+      "applicationUrl": "http://localhost:8080", // The port for your project
+      "environmentVariables": []
+    }
+  }
+}
